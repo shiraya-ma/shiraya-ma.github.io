@@ -1,8 +1,8 @@
 // useCloseNavbarMenu
 'use client';
+import { useEffect } from "react";
 
 import { useNavbarMenu } from "@/features/navbar-menu";
-import { useEffect } from "react";
 
 export function useCloseNavbarMenu () {
     const { toggleMenu } = useNavbarMenu();

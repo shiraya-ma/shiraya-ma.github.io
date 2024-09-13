@@ -18,7 +18,7 @@ import {
 import 'tailwindcss/tailwind.css';
 import '@shiraya-ma/mai-ui/fonts.css';
 
-import { useNavbarMenu } from './features/navbar-menu';
+import { useNavbarMenu } from '@/features/navbar-menu';
 
 import './global.css';
 
