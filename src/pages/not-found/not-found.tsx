@@ -15,7 +15,7 @@ const NotFound: React.FC<NotFound.Props> = (props) => {
     const {} = props;
 
     const { items } = useBreadcrumbs();
-    // const { href, seconds } = useReturn('/', 5);
+    const { href, seconds } = useReturn('/', 10);
     
     return (
         <>
@@ -29,7 +29,7 @@ const NotFound: React.FC<NotFound.Props> = (props) => {
                 <MaiH1>404 Not Found.</MaiH1>
 
                 <p>
-                    { 5 }秒後に<MaiLink href={ '/' }>トップページ</MaiLink>へ戻ります。
+                    { seconds }秒後に<MaiLink href={ href }>トップページ</MaiLink>へ戻ります。
                 </p>
             </MaiArticle.Container>
         </>
