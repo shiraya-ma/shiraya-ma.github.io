@@ -1,15 +1,17 @@
 // Home
 'use strict';
-import { MaiArticle, MaiLink } from '@shiraya-ma/mai-ui';
 import React from 'react';
+import { MaiLink } from '@shiraya-ma/mai-ui';
+
+import { Page } from '@/components';
 
 const Home: React.FC<Home.Props> = (props) => {
     const {} = props;
     
     return (
-        <MaiArticle.Container>
+        <Page>
             <MaiLink href='/hoge'>to hoge.</MaiLink>
-        </MaiArticle.Container>
+        </Page>
     );
 };
 
