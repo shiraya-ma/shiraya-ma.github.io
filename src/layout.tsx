@@ -21,6 +21,7 @@ import '@shiraya-ma/mai-ui/fonts.css';
 import { useNavbarMenu } from '@/features/navbar-menu';
 
 import './global.css';
+import { navs } from './configs';
 
 const Layout: React.FC<Layout.Props> = (props) => {
     const { children } = props;
@@ -44,16 +45,20 @@ const Layout: React.FC<Layout.Props> = (props) => {
                     </NavbarItem>
 
                     <NavbarItem className='hidden gap-4 grow md:flex'>
-                        <MaiLink href='/'>HOME</MaiLink>
+                        { navs.map(nav => (
+                            <MaiLink href={ nav.href } key={`navbar-link-${ nav.label }`}>{ nav.label }</MaiLink>
+                        ))}
                     </NavbarItem>
                     
                     <NavbarItem>
                     </NavbarItem>
 
                     <NavbarMenu className='md:hidden'>
-                        <NavbarMenuItem>
-                            <MaiLink href='/'>HOME</MaiLink>
-                        </NavbarMenuItem>
+                        { navs.map(nav => (
+                            <NavbarMenuItem key={`navbar-menu-link-${ nav.label }`}>
+                                <MaiLink href={ nav.href }>{ nav.label }</MaiLink>
+                            </NavbarMenuItem>                        
+                        ))}
                     </NavbarMenu>
                 </NavbarContent>
             </Navbar>
