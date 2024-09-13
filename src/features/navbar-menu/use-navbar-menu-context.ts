@@ -8,7 +8,7 @@ export function useNavbarMenuContext () {
 
     const toggleMenu = useCallback((isMenuOpen: boolean)=> {
         setIsMenuOpen(isMenuOpen);
-    }, []);
+    }, [ setIsMenuOpen ]);
 
     const context: NavbarMenuContextProps = {
         isMenuOpen,

@@ -1,6 +1,6 @@
 // Layout
 'use strict';
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Navbar,
@@ -18,13 +18,15 @@ import {
 import 'tailwindcss/tailwind.css';
 import '@shiraya-ma/mai-ui/fonts.css';
 
+import { useNavbarMenu } from './features/navbar-menu';
+
 import './global.css';
 
 const Layout: React.FC<Layout.Props> = (props) => {
-    const [ isMenuOpen, setIsMenuOpen ] = useState<boolean>(false);
     const { children } = props;
 
     const navigate = useNavigate();
+    const { isMenuOpen, toggleMenu } = useNavbarMenu();
     
     return (
         <MaiUIProvider navigate={ navigate }>
@@ -35,7 +37,7 @@ const Layout: React.FC<Layout.Props> = (props) => {
             }}
             isBordered
             isMenuOpen={isMenuOpen}
-            onMenuOpenChange={setIsMenuOpen}>
+            onMenuOpenChange={ toggleMenu }>
                 <NavbarContent>
                     <NavbarItem className='flex size-16 justify-center md:hidden'>
                         <NavbarMenuToggle aria-label={ isMenuOpen ? "Close menu" : "Open menu" }/>
