@@ -1,22 +1,38 @@
 // NotFound
 'use strict';
 import React from 'react';
-import { MaiArticle, MaiH1, MaiLink } from '@shiraya-ma/mai-ui';
-import { useReturn } from './hooks';
+import {
+    MaiArticle,
+    MaiBreadcrumbItem,
+    MaiBreadcrumbs,
+    MaiH1,
+    MaiLink
+} from '@shiraya-ma/mai-ui';
+
+import { useBreadcrumbs, useReturn } from './hooks';
 
 const NotFound: React.FC<NotFound.Props> = (props) => {
     const {} = props;
 
+    const { items } = useBreadcrumbs();
     // const { href, seconds } = useReturn('/', 5);
     
     return (
-        <MaiArticle.Container>
-            <MaiH1>404 Not Found.</MaiH1>
+        <>
+            <MaiBreadcrumbs>
+                { items.map(item => (
+                    <MaiBreadcrumbItem href={ item.href } key={ item.key }>{ item.children }</MaiBreadcrumbItem>
+                ))}
+            </MaiBreadcrumbs>
 
-            <p>
-                { 5 }秒後に<MaiLink href={ '/' }>トップページ</MaiLink>へ戻ります。
-            </p>
-        </MaiArticle.Container>
+            <MaiArticle.Container>
+                <MaiH1>404 Not Found.</MaiH1>
+
+                <p>
+                    { 5 }秒後に<MaiLink href={ '/' }>トップページ</MaiLink>へ戻ります。
+                </p>
+            </MaiArticle.Container>
+        </>
     );
 };
 
