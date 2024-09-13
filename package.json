@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000",
-    "build": "tsc -b && vite build && touch ./dist/.nojekyll",
+    "build": "tsc -b && vite build && touch ./docs/.nojekyll",
     "lint": "eslint .",
     "preview": "vite preview"
   },
