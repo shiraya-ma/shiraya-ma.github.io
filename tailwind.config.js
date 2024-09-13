@@ -1,13 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: ['class'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+'use strict';
+import { maiUIConfig } from '@shiraya-ma/mai-ui';
 
+export default maiUIConfig({
+  content: []
+});
