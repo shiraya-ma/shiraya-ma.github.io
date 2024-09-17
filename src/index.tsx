@@ -15,9 +15,9 @@ createRoot(document.querySelector('div#root')!)
       <Layout>
         <Routes>
           {navs.map((nav) => (
-            <Route path={ nav.href } element={ nav.component } key={`router-${ nav.label }`} />
+            <Route path={ nav.path ?? nav.href } element={ nav.component } key={`router-${ nav.label }`} />
           ))}
-          
+
           <Route path='*' element={ <NotFound /> } />
         </Routes>  
       </Layout>
