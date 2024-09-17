@@ -1,13 +1,11 @@
 // Layout
 'use strict';
-import React, { ReactNode } from 'react';
+import React, { lazy, ReactNode, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Navbar,
     NavbarContent,
     NavbarItem,
-    NavbarMenu,
-    NavbarMenuItem,
     NavbarMenuToggle,
 } from '@nextui-org/react';
 import {
@@ -53,13 +51,13 @@ const Layout: React.FC<Layout.Props> = (props) => {
                     <NavbarItem>
                     </NavbarItem>
 
-                    <NavbarMenu className='md:hidden'>
-                        { navs.map(nav => (
-                            <NavbarMenuItem key={`navbar-menu-link-${ nav.label }`}>
-                                <MaiLink href={ nav.href }>{ nav.label }</MaiLink>
-                            </NavbarMenuItem>                        
-                        ))}
-                    </NavbarMenu>
+                    <Suspense>
+                        <>
+                            { lazy(() =>
+                                import("./components/lazy-navbar-menu/navbar-menu")
+                            )}
+                        </>
+                    </Suspense>
                 </NavbarContent>
             </Navbar>
 
