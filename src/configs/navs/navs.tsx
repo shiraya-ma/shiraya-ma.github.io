@@ -1,15 +1,21 @@
 'use strict';
 import { type ReactNode } from "react";
+import { Route, Routes } from "react-router-dom";
 
 import { Home, MaiUI } from "@/pages";
 import { Page } from "@/components";
-import { Route, Routes } from "react-router-dom";
+
+import { maiUIComponents } from "./mai-ui-navs";
 
 export const navs: NavProp[] = [
     { href: '/', label: 'HOME', component: (<Home />) },
     { href: '/mai-ui', path: '/mai-ui/*', label: 'MaiUI', component: (
         <Routes>
             <Route path="/" element={ <MaiUI /> }/>
+
+            { maiUIComponents.map(nav => (
+                <Route path={`/components${ nav.href }`} element={ nav.component } key={`mai-ui-components-${ nav.name }`}/>
+            ))}
         </Routes>
     ) },
     { href: '/temp', label: 'TEMP', component: (<Page title="temp">temp page</Page>) }
