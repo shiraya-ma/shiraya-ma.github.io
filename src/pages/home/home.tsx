@@ -9,7 +9,7 @@ const Home: React.FC<Home.Props> = (props) => {
     const {} = props;
     
     return (
-        <Page>
+        <Page title='Documentation'>
             <MaiLink href='/hoge'>to hoge.</MaiLink>
         </Page>
     );
@@ -22,3 +22,5 @@ namespace Home {
 export {
     Home
 };
+
+export default Home;
