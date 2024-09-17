@@ -1,6 +1,6 @@
 // Layout
 'use strict';
-import React, { lazy, ReactNode, Suspense } from 'react';
+import React, { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Navbar,
@@ -20,6 +20,7 @@ import { useNavbarMenu } from '@/features/navbar-menu';
 
 import './global.css';
 import { navs } from './configs';
+import { NavbarMenu } from './components';
 
 const Layout: React.FC<Layout.Props> = (props) => {
     const { children } = props;
@@ -51,13 +52,7 @@ const Layout: React.FC<Layout.Props> = (props) => {
                     <NavbarItem>
                     </NavbarItem>
 
-                    <Suspense>
-                        <>
-                            { lazy(() =>
-                                import("./components/lazy-navbar-menu/navbar-menu")
-                            )}
-                        </>
-                    </Suspense>
+                    <NavbarMenu />
                 </NavbarContent>
             </Navbar>
 
