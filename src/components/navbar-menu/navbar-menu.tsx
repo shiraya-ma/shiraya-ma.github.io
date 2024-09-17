@@ -11,6 +11,10 @@ const NavbarMenu: React.FC<NavbarMenu.Props> = (props) => {
     
     return (
         <NextUINavbarMenu>
+            <NavbarMenuItem key={`navbar-menu-link-links`}>
+                <h2>Links</h2>
+            </NavbarMenuItem>
+
             { navs.map(nav => (
                 <NavbarMenuItem key={`navbar-menu-link-${ nav.label }`}>
                     <MaiLink href={ nav.href }>{ nav.label }</MaiLink>
