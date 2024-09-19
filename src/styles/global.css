@@ -1,3 +1,15 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply flex h-full;
+}
+
+body,
+body > div#___gatsby,
+body > div#___gatsby > div#gatsby-focus-wrapper,
+body > div#___gatsby > div#gatsby-focus-wrapper > div {
+    @apply flex flex-col flex-grow;
+}
