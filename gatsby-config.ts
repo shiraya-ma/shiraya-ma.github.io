@@ -1,4 +1,5 @@
 'use strict';
+import { resolve } from 'path';
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
@@ -12,6 +13,14 @@ const config: GatsbyConfig = {
   // graphqlTypegen: true,
   graphqlTypegen: false,
   plugins: [
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@": resolve(__dirname, 'src')
+        }
+      }
+    },
     "gatsby-plugin-layout",
     "gatsby-plugin-postcss",
     // "gatsby-plugin-sitemap", {
