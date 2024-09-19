@@ -1,6 +1,11 @@
-'use strict';
-import { maiUIConfig } from '@shiraya-ma/mai-ui';
-
-export default maiUIConfig({
-  content: []
-});
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    `./src/pages/**/*.{js,jsx,ts,tsx}`,
+    `./src/components/**/*.{js,jsx,ts,tsx}`,
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}

@@ -1,43 +1,34 @@
 {
-  "name": "github-io",
+  "name": "shiraya-ma.github.io",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "shiraya-ma.github.io",
+  "author": "shiraya-ma",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "dev": "vite --port=3000",
-    "build": "bun run ./.bun/build.ts",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "gatsby develop -p 3000",
+    "build": "gatsby build",
+    "start": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.4.6",
-    "@shiraya-ma/mai-ui": "^0.11.1",
-    "framer-motion": "^11.5.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-syntax-highlighter": "^15.5.0"
+    "autoprefixer": "^10.4.20",
+    "gatsby": "^5.13.7",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "postcss": "^8.4.47",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.12"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@types/bun": "^1.1.9",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@types/react-router-dom": "^5.3.3",
-    "@types/react-syntax-highlighter": "^15.5.13",
-    "@vitejs/plugin-react": "^4.3.1",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
-    "postcss": "^8.4.45",
-    "react-router-dom": "^6.26.2",
-    "rimraf": "^6.0.1",
-    "rollup-plugin-visualizer": "^5.12.0",
-    "tailwindcss": "^3.4.11",
-    "terser": "^5.32.0",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.3.3"
   }
 }
