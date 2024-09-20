@@ -27,7 +27,9 @@ const MaiUIConmponents = (props: MaiUIConmponents.Props): { Page: React.FC<PageP
                     <MaiH1>{ name }</MaiH1>
     
                     <MaiArticle.Divider />
-                    <section>
+
+                    <section
+                    className='flex flex-col gap-4'>
                         { description && (<MaiMarkdown children={ description }/>) }
     
                         { seeMore  && (<p><MaiLink href={ seeMore }>see more</MaiLink></p>) }
