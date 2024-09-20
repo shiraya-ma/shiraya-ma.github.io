@@ -1,7 +1,7 @@
 'use strict';
 
 export const navs: NavProps[] = [
-    { href: '/', label: 'MaiDocumentation' },
+    { href: '/', label: 'MaiDocs' },
     { href: '/temp', label: 'Temp' },
 ];
 
