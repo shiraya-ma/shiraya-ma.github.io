@@ -33,10 +33,10 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
                 <NavbarContent
                 className='hidden md:flex'>
                     { navs.map(nav => (
-                        <NavbarItem key={`navbar-links-${ nav.label }`}>
+                        <NavbarItem key={ nav.label }>
                             <MaiLink
                             href={ nav.href }
-                            className='text-xl font-heading text-[var(--nextui-foreground)]'>
+                            className='text-xl font-logo text-[var(--nextui-foreground)]'>
                                 { nav.label }
                             </MaiLink>
                         </NavbarItem>
@@ -46,10 +46,10 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
                 <NavbarMenu
                 className='overflow-y-hidden'>
                     { navs.map(nav => (
-                        <NavbarMenuItem key={`navbar-menu-links-${ nav.label }`}>
+                        <NavbarMenuItem key={ nav.label }>
                             <MaiLink
                             href={ nav.href }
-                            className='text-2xl'
+                            className='text-2xl font-logo text-[var(--nextui-foreground)]'
                             showAnchorIcon>
                                 { nav.label }
                             </MaiLink>
