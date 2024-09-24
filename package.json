@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
-    "@shiraya-ma/mai-ui": "1.0.0-alpha1",
+    "@shiraya-ma/mai-ui": "1.0.0-alpha2",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.5.4",
     "gatsby": "^5.13.7",
