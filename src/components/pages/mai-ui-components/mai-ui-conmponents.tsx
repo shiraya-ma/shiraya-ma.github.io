@@ -54,7 +54,7 @@ const MaiUIComponents = (props: MaiUIComponents.Props): { Page: React.FC<PagePro
     },
     Head: () =>(<>
         <title>{ props.name } - MaiUI</title>
-        { props.description && <meta name='description' content={ props.description } /> }
+        { props.description && <meta name='description' content={ props.description.split(/\n/).map(s => s.trim()).join(' ') } /> }
     </>)
 });
 
