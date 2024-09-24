@@ -1,8 +1,7 @@
 'use strict';
 
 export const usage = `import React from "react";
-
-import { MaiInstagramLink, MaiPixivLink, MaiTwitterLink } from "@shiraya-ma/mai-ui";
+import { MaiSNSLink } from "@shiraya-ma/mai-ui";
 
 export default function App() {
   return (
@@ -22,8 +21,7 @@ export default function App() {
 `;
 
 export const individualImport = `import React from "react";
-
-import { MaiButton } from "@shiraya-ma/mai-ui";
+import { MaiInstagramLink, MaiPixivLink, MaiTwitterLink } from "@shiraya-ma/mai-ui";
 
 export default function App() {
   return (
@@ -46,8 +44,7 @@ export default function App() {
 `;
 
 export const withChilren = `import React from "react";
-
-import { MaiButton } from "@shiraya-ma/mai-ui";
+import { MaiInstagramLink, MaiPixivLink, MaiTwitterLink } from "@shiraya-ma/mai-ui";
 
 export default function App() {
   return (
@@ -76,7 +73,6 @@ export default function App() {
 `;
 
 export const twitterIcon = `import React from "react";
-
 import { MaiTwitterLink } from "@shiraya-ma/mai-ui";
 
 export default function App() {
