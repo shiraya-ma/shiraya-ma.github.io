@@ -1,10 +1,10 @@
-// MaiUIConmponents
+// MaiUIComponents
 'use strict';
 import React, { type ReactNode } from 'react';
 import { HeadFC, type PageProps } from 'gatsby';
 import { MaiArticle, MaiBreadcrumbItem, MaiBreadcrumbs, MaiH1, MaiH2, MaiLink, MaiMarkdown } from '@shiraya-ma/mai-ui';
 
-const MaiUIConmponents = (props: MaiUIConmponents.Props): { Page: React.FC<PageProps>, Head: HeadFC } => ({
+const MaiUIComponents = (props: MaiUIComponents.Props): { Page: React.FC<PageProps>, Head: HeadFC } => ({
     Page: () => {
         const {
             description,
@@ -58,7 +58,7 @@ const MaiUIConmponents = (props: MaiUIConmponents.Props): { Page: React.FC<PageP
     </>)
 });
 
-namespace MaiUIConmponents {
+namespace MaiUIComponents {
     export type Props = {
         name: `Mai${ string }`;
         href:  `/mai-${ string }`;
@@ -71,5 +71,5 @@ namespace MaiUIConmponents {
 };
 
 export {
-    MaiUIConmponents
+    MaiUIComponents
 };

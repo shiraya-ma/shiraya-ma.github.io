@@ -2,12 +2,12 @@
 import React from 'react';
 import { MaiButton, MaiLink } from '@shiraya-ma/mai-ui';
 
-import { MaiUIConmponents } from '@/components/pages';
+import { MaiUIComponents } from '@/components/pages';
 
 import { Case } from '../_ui';
 import * as code from '../_codes/button';
 
-const props: MaiUIConmponents.Props = {
+const props: MaiUIComponents.Props = {
     name: 'MaiButton',
     href: '/mai-button',
 
@@ -72,6 +72,6 @@ import { MaiButton } from '@shiraya-ma/mai-ui';
     )
 };
 
-export default MaiUIConmponents(props).Page;
+export default MaiUIComponents(props).Page;
 
-export const Head = MaiUIConmponents(props).Head;
+export const Head = MaiUIComponents(props).Head;
