@@ -19,6 +19,7 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
             <Helmet>
                 <link rel='icon' href='/favicon.ico'/>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+                <meta name='robots' content='noindex, nofollow' />
             </Helmet>
 
             <MaiUIProvider navigate={ navigate }>
