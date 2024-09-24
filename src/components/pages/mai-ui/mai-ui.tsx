@@ -15,7 +15,7 @@ const MaiUI: React.FC<MaiUI.Props> = (props) => {
             </MaiBreadcrumbs>
 
             <MaiArticle.Container>
-                <MaiH1>MaiUI</MaiH1>
+                <MaiH1 className='font-logo'>MaiUI</MaiH1>
 
                 <MaiArticle.Divider />
 
