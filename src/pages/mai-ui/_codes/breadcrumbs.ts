@@ -8,9 +8,11 @@ export default function App() {
   return (
     <>
       <MaiBreadcrumbs>
-        <MaiBreadcrumbItem href='/components'>Components</MaiBreadcrumbItem>
+        <MaiBreadcrumbItem href='/mai-ui'>MaiUI</MaiBreadcrumbItem>
+
+        <MaiBreadcrumbItem href='/mai-ui/components'>Components</MaiBreadcrumbItem>
         
-        <MaiBreadcrumbItem href='/mai-breadcrumbs'>MaiBreadcrumbs</MaiBreadcrumbItem>
+        <MaiBreadcrumbItem href='/mai-ui/components/mai-breadcrumbs'>MaiBreadcrumbs</MaiBreadcrumbItem>
       </MaiBreadcrumbs>
     </>
   );
