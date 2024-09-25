@@ -14,7 +14,7 @@ const MaiUiNav: React.FC<MaiUiNav.Props> = (props) => {
                 <Accordion title='Guide'>
                     { guide.map(nav => (
                         <Accordion.Item
-                        href={`/mai-ui/components${ nav.href }`}
+                        href={`/mai-ui/guide${ nav.href }`}
                         key={ nav.label }>
                             { nav.label }
                         </Accordion.Item>
