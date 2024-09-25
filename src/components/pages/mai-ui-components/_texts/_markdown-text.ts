@@ -1,6 +1,4 @@
 'use strict';
-import { Redirect } from '../_redirect';
-export default Redirect;
 
 export const markdownText = `
 # GFMの対応する構文

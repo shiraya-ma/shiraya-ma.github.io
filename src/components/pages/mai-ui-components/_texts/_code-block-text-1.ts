@@ -1,6 +1,4 @@
 'use strict';
-import { Redirect } from '../_redirect';
-export default Redirect;
 
 export const codeBlockText1  =`<!-- https://github.com/h5bp/html5-boilerplate/blob/main/src/index.html -->
 <!doctype html>

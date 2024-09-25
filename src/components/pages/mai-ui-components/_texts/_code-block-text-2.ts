@@ -1,6 +1,4 @@
 'use strict';
-import { Redirect } from '../_redirect';
-export default Redirect;
 
 export const codeBlockText2 = `// https://ja.react.dev/reference/react/useEffect#examples-connecting
 import { useState, useEffect } from 'react';

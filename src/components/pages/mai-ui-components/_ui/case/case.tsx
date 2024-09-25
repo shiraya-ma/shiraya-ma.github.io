@@ -4,8 +4,6 @@ import React, { ReactNode } from 'react';
 import { Tab, Tabs } from '@nextui-org/react';
 import { MaiH3, MaiCodeBlock } from '@shiraya-ma/mai-ui';
 
-import { Redirect } from '../../_redirect';
-
 const Case: React.FC<Case.Props> = (props) => {
     const { title, preview, previewDirection, code } = props;
     
@@ -46,5 +44,3 @@ namespace Case {
 export {
     Case
 };
-
-export default Redirect;
