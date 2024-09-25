@@ -1,9 +1,11 @@
 // MaiUI
 'use strict';
 import React from 'react';
-import { MaiArticle, MaiBreadcrumbItem, MaiBreadcrumbs, MaiH1, MaiH2, MaiLink } from '@shiraya-ma/mai-ui';
+import { MaiArticle, MaiBreadcrumbItem, MaiBreadcrumbs, MaiH1, MaiH2 } from '@shiraya-ma/mai-ui';
 
-import { maiUIComponentsNavs as components } from '@/configs';
+import { maiUIComponentsNavs as components, maiUIGuideNavs as guide } from '@/configs';
+
+import { Nav } from './ui';
 
 const MaiUI: React.FC<MaiUI.Props> = (props) => {
     const {} = props;
@@ -22,26 +24,27 @@ const MaiUI: React.FC<MaiUI.Props> = (props) => {
                 <section>
                     <MaiH2>Guide</MaiH2>
 
-                    <section></section>
+                    <Nav>
+                        { guide.map((nav) => (
+                            <Nav.Item
+                            href={`/mai-ui/guide${ nav.href }`}
+                            key={nav.label}>
+                                { nav.label }
+                            </Nav.Item>
+                        ))}
+                    </Nav>
 
                     <MaiH2>Components</MaiH2>
 
-                    <section>
-                        <nav>
-                            <ul className='flex flex-col gap-2 p-4'>
-                                { components.map((nav) => (
-                                    <li key={nav.label}>
-                                        <MaiLink
-                                        href={`/mai-ui/components${ nav.href }`}
-                                        className='text-2xl font-logo text-[var(--nextui-foreground)]'
-                                        showAnchorIcon>
-                                            { nav.label }
-                                        </MaiLink>
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
-                    </section>
+                    <Nav>
+                        { components.map((nav) => (
+                            <Nav.Item
+                            href={`/mai-ui/components${ nav.href }`}
+                            key={nav.label}>
+                                { nav.label }
+                            </Nav.Item>
+                        ))}
+                    </Nav>
                 </section>
             </MaiArticle.Container>
         </>
