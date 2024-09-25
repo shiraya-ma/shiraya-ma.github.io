@@ -9,6 +9,7 @@ import { navs } from '@/configs';
 
 import '@shiraya-ma/mai-ui/fonts.css';
 import { Helmet } from 'react-helmet';
+import { LeftNav } from './ui';
 
 const RootLayout: React.FC<RootLayout.Props> = (props) => {
     const { children } = props;
@@ -67,11 +68,16 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
                 </Navbar>
 
                 <div
-                className='flex flex-grow'>
+                className='relative flex flex-col flex-grow lg:flex-row-reverse'>
                     <main
-                    className='flex flex-col flex-grow mx-auto w-screen max-w-[100ch] gap-4'>
+                    className='flex flex-col flex-grow mx-auto w-screen max-w-[100ch] gap-4 lg:ml-0'>
                         { children }
                     </main>
+
+                    <aside
+                    className='sticky top-16 flex flex-col gap-2 h-fit max-h-full p-4 overflow-x-hidden lg:w-[calc((100%-100ch)/2)]'>
+                        <LeftNav />
+                    </aside>
                 </div>
             </MaiUIProvider>
         </>
