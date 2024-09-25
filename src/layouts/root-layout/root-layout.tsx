@@ -17,7 +17,9 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
     
     return (
         <>
-            <Helmet>
+            <Helmet htmlAttributes={{
+                lang: 'en'
+            }}>
                 <link rel='icon' href='/favicon.ico'/>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <meta name='robots' content='noindex, nofollow' />
@@ -70,7 +72,7 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
                 <div
                 className='relative flex flex-col flex-grow lg:flex-row-reverse'>
                     <main
-                    className='flex flex-col flex-grow mx-auto w-screen max-w-[100ch] gap-4 lg:ml-0'>
+                    className='flex flex-col flex-grow mx-auto w-full max-w-[100ch] gap-4 lg:ml-0'>
                         { children }
                     </main>
 
