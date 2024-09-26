@@ -1,6 +1,7 @@
 // MaiUIGuide
 'use strict';
 import React, { type ReactNode } from 'react';
+import { Helmet } from 'react-helmet';
 import { MaiArticle, MaiBreadcrumbItem, MaiBreadcrumbs, MaiH1 } from '@shiraya-ma/mai-ui';
 
 const MaiUIGuide: React.FC<MaiUIGuide.Props> = (props) => {
@@ -12,6 +13,10 @@ const MaiUIGuide: React.FC<MaiUIGuide.Props> = (props) => {
     
     return (
         <>
+            <Helmet>
+                <title>{ name } - MaiUI</title>
+            </Helmet>
+
             <MaiBreadcrumbs>
                 <MaiBreadcrumbItem href='/mai-ui'>MaiUI</MaiBreadcrumbItem>                
                 <MaiBreadcrumbItem href='/mai-ui/guide'>Guide</MaiBreadcrumbItem>
