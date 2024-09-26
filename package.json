@@ -8,10 +8,11 @@
     "gatsby"
   ],
   "scripts": {
-    "dev": "gatsby clean && gatsby develop -p 3000",
-    "build": "bun ./.bun/build.ts",
+    "dev": "bun run clean && gatsby develop -p 3000",
+    "build": "bun run clean && gatsby build",
     "start": "gatsby serve",
-    "clean": "gatsby clean",
+    "pre-deploy": "bun run ./.bun/pre-deploy.ts",
+    "clean": "gatsby clean && rimraf docs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
