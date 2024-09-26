@@ -34,7 +34,11 @@ import { MaiMarkdown } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsMarkdown = MaiUIComponents(props);
+const MaiUIComponentsMarkdown = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsMarkdown

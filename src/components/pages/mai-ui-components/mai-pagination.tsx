@@ -34,7 +34,11 @@ import { MaiPagination } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsPagination = MaiUIComponents(props);
+const MaiUIComponentsPagination = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsPagination

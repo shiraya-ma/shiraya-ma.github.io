@@ -60,7 +60,11 @@ import { MaiCodeBlock } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsCodeBlock = MaiUIComponents(props);
+const MaiUIComponentsCodeBlock = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsCodeBlock

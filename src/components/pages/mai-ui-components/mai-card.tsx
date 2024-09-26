@@ -67,7 +67,11 @@ import { MaiCard, MaiCardBody, MaiCardFooter, MaiCardHeader } from '@shiraya-ma/
     )
 };
 
-const MaiUIComponentsCard = MaiUIComponents(props);
+const MaiUIComponentsCard = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsCard

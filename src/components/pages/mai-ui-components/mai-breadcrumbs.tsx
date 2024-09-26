@@ -40,7 +40,11 @@ import { MaiBreadcrumbItem, MaiBreadcrumbs } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsBreadcrumbs = MaiUIComponents(props);
+const MaiUIComponentsBreadcrumbs = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsBreadcrumbs

@@ -81,7 +81,11 @@ import { MaiHeadings, MaiH1, MaiH2, MaiH3, MaiH4, MaiH5, MaiH6 } from '@shiraya-
     )
 };
 
-const MaiUIComponentsHeadings = MaiUIComponents(props);
+const MaiUIComponentsHeadings = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsHeadings

@@ -72,7 +72,11 @@ import { MaiButton } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsButton = MaiUIComponents(props);
+const MaiUIComponentsButton = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsButton

@@ -52,7 +52,11 @@ import { MaiSkeleton } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsSkeleton = MaiUIComponents(props);
+const MaiUIComponentsSkeleton = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsSkeleton

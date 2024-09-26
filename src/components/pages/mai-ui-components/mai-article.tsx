@@ -54,7 +54,11 @@ import { MaiArticle } from '@shiraya-ma/mai-ui';
     )
 };
 
-const MaiUIComponentsArticle = MaiUIComponents(props);
+const MaiUIComponentsArticle = () => {
+	return (
+		<MaiUIComponents {...props} />
+	);
+};
 
 export {
     MaiUIComponentsArticle

@@ -200,7 +200,11 @@ export default Layout;
     `}</MaiMarkdown>)
 };
 
-const MaiUIGuideInstrallation = MaiUIGuide(props);
+const MaiUIGuideInstrallation = () => {
+    return (
+        <MaiUIGuide {...props}/>
+    );
+};
 
 export {
     MaiUIGuideInstrallation

@@ -1,42 +1,36 @@
 // MaiUIGuide
 'use strict';
 import React, { type ReactNode } from 'react';
-import { HeadFC, type PageProps } from 'gatsby';
 import { MaiArticle, MaiBreadcrumbItem, MaiBreadcrumbs, MaiH1 } from '@shiraya-ma/mai-ui';
 
-const MaiUIGuide = (props: MaiUIGuide.Props): { Page: React.FC<PageProps>, Head: HeadFC } => ({
-    Page: () => {
-        const {
-            href,
-            name,
-            children
-        } = props;
-        
-        return (
-            <>
-                <MaiBreadcrumbs>
-                    <MaiBreadcrumbItem href='/mai-ui'>MaiUI</MaiBreadcrumbItem>                
-                    <MaiBreadcrumbItem href='/mai-ui/guide'>Guide</MaiBreadcrumbItem>
-                    <MaiBreadcrumbItem href={`/mai-ui/guide${ href }`}>{ name }</MaiBreadcrumbItem>
-                </MaiBreadcrumbs>
+const MaiUIGuide: React.FC<MaiUIGuide.Props> = (props) => {
+    const {
+        href,
+        name,
+        children
+    } = props;
     
-                <MaiArticle.Container>
-                    <MaiH1>{ name }</MaiH1>
-    
-                    <MaiArticle.Divider />
+    return (
+        <>
+            <MaiBreadcrumbs>
+                <MaiBreadcrumbItem href='/mai-ui'>MaiUI</MaiBreadcrumbItem>                
+                <MaiBreadcrumbItem href='/mai-ui/guide'>Guide</MaiBreadcrumbItem>
+                <MaiBreadcrumbItem href={`/mai-ui/guide${ href }`}>{ name }</MaiBreadcrumbItem>
+            </MaiBreadcrumbs>
 
-                    <section
-                    className='flex flex-col gap-4'>
-                        { children }
-                    </section>
-                </MaiArticle.Container>
-            </>
-        );
-    },
-    Head: () =>(<>
-        <title>{ props.name } - MaiUI</title>
-    </>)
-});
+            <MaiArticle.Container>
+                <MaiH1>{ name }</MaiH1>
+
+                <MaiArticle.Divider />
+
+                <section
+                className='flex flex-col gap-4'>
+                    { children }
+                </section>
+            </MaiArticle.Container>
+        </>
+    );
+};
 
 namespace MaiUIGuide {
     export type Props = {
