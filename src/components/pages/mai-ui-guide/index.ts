@@ -1,4 +1,4 @@
 'use strict';
 
+export * from './colors';
 export * from './installation';
-export * from './mai-ui-guide';
