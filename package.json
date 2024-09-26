@@ -8,8 +8,8 @@
     "gatsby"
   ],
   "scripts": {
-    "dev": "gatsby develop -p 3000",
-    "build": "gatsby build",
+    "dev": "gatsby clean && gatsby develop -p 3000",
+    "build": "gatsby clean && gatsby build",
     "start": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
@@ -37,7 +37,6 @@
     "@types/react-dom": "^18.2.19",
     "@types/react-helmet": "^6.1.11",
     "@types/react-syntax-highlighter": "^15.5.13",
-    "gatsby-plugin-output": "^0.1.3",
     "typescript": "^5.3.3"
   }
 }

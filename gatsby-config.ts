@@ -28,15 +28,7 @@ const config: GatsbyConfig = {
     //   options: {
     //   },
     // },
-    "gatsby-plugin-postcss",
-    {
-      resolve: `gatsby-plugin-output`,
-      options: {
-        // default values
-        publicPath: 'docs',
-        rmPublicFolder: false
-      }
-    }
+    "gatsby-plugin-postcss"
   ]
 };
 
