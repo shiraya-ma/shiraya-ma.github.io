@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "gatsby clean && gatsby develop -p 3000",
-    "build": "gatsby clean && gatsby build",
+    "build": "bun ./.bun/build.ts",
     "start": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
@@ -17,6 +17,7 @@
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
     "@shiraya-ma/mai-ui": "1.0.0-alpha2",
+    "@types/bun": "^1.1.10",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.5.4",
     "gatsby": "^5.13.7",
@@ -37,6 +38,7 @@
     "@types/react-dom": "^18.2.19",
     "@types/react-helmet": "^6.1.11",
     "@types/react-syntax-highlighter": "^15.5.13",
+    "rimraf": "^6.0.1",
     "typescript": "^5.3.3"
   }
 }
