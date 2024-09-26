@@ -1,11 +1,11 @@
-// MaiUiNav
+// MaiUINav
 'use strict';
 import React from 'react';
 
 import { maiUIComponentsNavs as components, maiUIGuideNavs as guide } from '@/configs';
 import { Accordion } from './accordion';
 
-const MaiUiNav: React.FC<MaiUiNav.Props> = (props) => {
+const MaiUINav: React.FC<MaiUINav.Props> = (props) => {
     const {} = props;
     
     return (
@@ -35,10 +35,10 @@ const MaiUiNav: React.FC<MaiUiNav.Props> = (props) => {
     );
 };
 
-namespace MaiUiNav {
+namespace MaiUINav {
     export type Props = {};
 };
 
 export {
-    MaiUiNav
+    MaiUINav
 };
