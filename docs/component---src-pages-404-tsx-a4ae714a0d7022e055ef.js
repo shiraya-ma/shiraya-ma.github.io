@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[218],{32513:function(t,e,a){a.r(e),a.d(e,{Head:function(){return i}});var u=a(67294),n=a(23957);e.default=n.AO;const i=()=>u.createElement("title",null,"Not found")}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-a4ae714a0d7022e055ef.js.map

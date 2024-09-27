@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[770],{70317:function(a,i,u){u.r(i);var h=u(23957);i.default=h.Vq}}]);
+//# sourceMappingURL=component---src-pages-mai-ui-components-mai-headings-tsx-f3c4da6337559a7f1852.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[44],{96272:function(a,i,u){u.r(i);var h=u(23957);i.default=h.q1}}]);
+//# sourceMappingURL=component---src-pages-mai-ui-guide-fonts-tsx-eef4260acf718cc0a295.js.map

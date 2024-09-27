@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-tsx-a6902722a6ab4b5d7a05.js","mappings":"wJAGA,UAAeA,EAAI,E","sources":["webpack://shiraya-ma.github.io/./src/pages/index.tsx"],"sourcesContent":["'use strict';\r\nimport { Home } from \"@/components/pages\";\r\n\r\nexport default Home;\r\n"],"names":["Home"],"sourceRoot":""}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[366],{67776:function(e,a,t){t.r(a),t.d(a,{Head:function(){return u}});var n=t(67294),i=t(23957);a.default=i.W7;const u=()=>n.createElement(n.Fragment,null,n.createElement("title",null,"MaiUI | MaiDocs"))}}]);
+//# sourceMappingURL=component---src-pages-mai-ui-index-tsx-e743128d316c3fc02975.js.map
