@@ -16,7 +16,7 @@ const LeftNav: React.FC<LeftNav.Props> = (props) => {
         <Router location={ pathname }>
             <Route path={/^\/mai-ui/} element={ <MaiUINav /> } />
 
-            <Route path={/.*/} element={ <>aside</> } />
+            <Route path={/.*/} element={ <></> } />
         </Router>
     );
 };
