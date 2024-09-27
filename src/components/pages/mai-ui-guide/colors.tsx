@@ -186,11 +186,7 @@ module.exports = maiUIConfig({
     </>)
 };
 
-const MaiUIGuideColors = () => {
-    return (
-        <MaiUIGuide {...props}/>
-    );
-};
+const MaiUIGuideColors = () => (<MaiUIGuide {...props}/>);
 
 export {
     MaiUIGuideColors
