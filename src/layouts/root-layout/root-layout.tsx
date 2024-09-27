@@ -1,6 +1,7 @@
 // RootLayout
 'use strict';
 import React, { useState, type ReactNode } from 'react';
+import { Helmet } from 'react-helmet';
 import { navigate } from 'gatsby';
 import { Navbar, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from '@nextui-org/react';
 import { MaiLink, MaiUIProvider } from '@shiraya-ma/mai-ui';
@@ -8,7 +9,6 @@ import { MaiLink, MaiUIProvider } from '@shiraya-ma/mai-ui';
 import { navs } from '@/configs';
 
 import '@shiraya-ma/mai-ui/fonts.css';
-import { Helmet } from 'react-helmet';
 import { LeftNav } from './ui';
 
 const RootLayout: React.FC<RootLayout.Props> = (props) => {
