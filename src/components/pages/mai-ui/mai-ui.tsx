@@ -21,7 +21,7 @@ const MaiUI: React.FC<MaiUI.Props> = (props) => {
 
                 <MaiArticle.Divider />
 
-                <section>
+                <section className='border-0'>
                     <MaiH2>Guide</MaiH2>
 
                     <Nav>
