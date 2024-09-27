@@ -3,7 +3,7 @@
 import React, { useState, type ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 import { navigate } from 'gatsby';
-import { Navbar, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from '@nextui-org/react';
+import { Divider, Navbar, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from '@nextui-org/react';
 import { MaiLink, MaiUIProvider } from '@shiraya-ma/mai-ui';
 
 import { navs } from '@/configs';
@@ -72,9 +72,11 @@ const RootLayout: React.FC<RootLayout.Props> = (props) => {
                 <div
                 className='relative flex flex-col flex-grow lg:flex-row-reverse'>
                     <main
-                    className='flex flex-col flex-grow mx-auto w-full max-w-[100ch] gap-4 lg:ml-0'>
+                    className='flex flex-col flex-grow mx-auto w-full max-w-[100ch] gap-4 lg:ml-0 lg:mb-12'>
                         { children }
                     </main>
+
+                    <Divider className='lg:hidden' />
 
                     <aside
                     className='sticky top-16 flex flex-col gap-2 h-fit max-h-full p-4 overflow-x-hidden lg:w-[calc((100%-100ch)/2)]'>
