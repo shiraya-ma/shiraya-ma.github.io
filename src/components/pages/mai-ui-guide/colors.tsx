@@ -1,18 +1,8 @@
 'use strict';
 import React from "react";
-import { MaiCodeBlock, maiColors, MaiH2, MaiLink, MaiMarkdown } from "@shiraya-ma/mai-ui";
+import { maiColors, MaiH2, MaiMarkdown } from "@shiraya-ma/mai-ui";
 
 import { MaiUIGuide } from "./mai-ui-guide";
-
-Object.entries(maiColors).map(([color, scales]) => {})
-
-const colors = [
-    'mint',
-    'chocolate',
-    'cider',
-    'strawberry',
-    'citrus'
-];
 
 const scales = [ 50, 100, 200, 300, 400, 500, 600, 800, 900 ];
 
