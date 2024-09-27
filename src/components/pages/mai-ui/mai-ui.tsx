@@ -1,6 +1,7 @@
 // MaiUI
 'use strict';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { MaiArticle, MaiBreadcrumbItem, MaiBreadcrumbs, MaiH1, MaiH2 } from '@shiraya-ma/mai-ui';
 
 import { maiUIComponentsNavs as components, maiUIGuideNavs as guide } from '@/configs';
@@ -12,6 +13,10 @@ const MaiUI: React.FC<MaiUI.Props> = (props) => {
     
     return (
         <>
+            <Helmet>
+                <title>MaiUI - MaiDocs</title>
+            </Helmet>
+
             <MaiBreadcrumbs>
                 <MaiBreadcrumbItem>MaiUI</MaiBreadcrumbItem>
             </MaiBreadcrumbs>
