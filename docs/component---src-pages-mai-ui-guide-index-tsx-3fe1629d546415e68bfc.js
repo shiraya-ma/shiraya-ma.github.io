@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[827],{53573:function(t,e,a){a.r(e),a.d(e,{Index:function(){return i}});var n=a(67294),u=a(14160);const i=t=>{const{}=t;return(0,n.useLayoutEffect)((()=>{(0,u.c4)("/mai-ui/guide/installation")}),[]),n.createElement(n.Fragment,null)};i||(i={}),e.default=i}}]);
+//# sourceMappingURL=component---src-pages-mai-ui-guide-index-tsx-3fe1629d546415e68bfc.js.map

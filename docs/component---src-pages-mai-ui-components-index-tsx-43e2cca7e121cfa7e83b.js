@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[693],{31024:function(t,e,n){n.r(e),n.d(e,{Index:function(){return i}});var u=n(67294),a=n(14160);const i=t=>{const{}=t;return(0,u.useLayoutEffect)((()=>{(0,a.c4)("/mai-ui/components/mai-button")}),[]),u.createElement(u.Fragment,null)};i||(i={}),e.default=i}}]);
+//# sourceMappingURL=component---src-pages-mai-ui-components-index-tsx-43e2cca7e121cfa7e83b.js.map

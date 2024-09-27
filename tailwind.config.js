@@ -1,6 +1,11 @@
 'use strict';
-import { maiUIConfig } from '@shiraya-ma/mai-ui';
+import { maiUIConfig } from "@shiraya-ma/mai-ui/setup";
 
-export default maiUIConfig({
-  content: []
+module.exports = maiUIConfig({
+  content: [],
+  theme: {
+    fontFamily: {
+      logo: [ 'Robot Flex', 'sans-serif' ]
+    }
+  }
 });

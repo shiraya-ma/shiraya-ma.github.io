@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[93],{98005:function(a,i,u){u.r(i);var h=u(23957);i.default=h.Kz}}]);
+//# sourceMappingURL=component---src-pages-mai-ui-components-mai-card-tsx-aeb7454f05f0dafb5692.js.map

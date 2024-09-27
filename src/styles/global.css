@@ -1,0 +1,21 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root {
+    --navbar-height: 4rem;
+}
+
+html {
+    @apply flex h-full;
+}
+
+body,
+body > div#___gatsby,
+body > div#___gatsby > div#gatsby-focus-wrapper,
+body > div#___gatsby > div#gatsby-focus-wrapper > div {
+    @apply flex flex-col flex-grow w-full;
+}

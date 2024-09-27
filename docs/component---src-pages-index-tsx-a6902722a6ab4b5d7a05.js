@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkshiraya_ma_github_io=self.webpackChunkshiraya_ma_github_io||[]).push([[691],{37200:function(a,i,u){u.r(i);var h=u(23957);i.default=h.SK}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-a6902722a6ab4b5d7a05.js.map
