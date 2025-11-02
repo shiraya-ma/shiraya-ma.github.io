@@ -14,7 +14,8 @@
     "pre-deploy": "bun run ./.bun/pre-deploy.ts",
     "clean": "gatsby clean && rimraf docs",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "bun test"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
