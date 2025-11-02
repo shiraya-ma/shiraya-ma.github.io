@@ -17,7 +17,7 @@ export default function App () {
             label={(
               <>
                 <Image
-                  src='/homepage/black.svg'
+                  src='/images/homepage/black.svg'
                   classNames={{
                     img: 'dark:hidden h-10',
                   }}
@@ -26,7 +26,7 @@ export default function App () {
                 />
 
                 <Image
-                  src='/homepage/white.svg'
+                  src='/images/homepage/white.svg'
                   classNames={{
                     img: 'hidden dark:block h-10',
                   }}
@@ -43,7 +43,7 @@ export default function App () {
             href='https://docs.shiraya.ma/mai-ui/'
             label={(
              <Image
-                src='/mai-ui/logotype.svg'
+                src='/images/mai-ui/logotype.svg'
                 classNames={{
                   img: 'h-10',
                 }}
