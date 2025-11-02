@@ -16,7 +16,7 @@ export function useRedirect (option?: UseredirectOption) {
         else {
             setTimeout(() => setSecs(secs - 1), 1000);
         }
-    }, [ secs ]);
+    }, [ secs, redirectHref ]);
 
     return {
         redirectHref,

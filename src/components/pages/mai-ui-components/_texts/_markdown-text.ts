@@ -160,9 +160,9 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 
 タスク リスト アイテムの説明がかっこで始まる場合、そのかっこを \`\\\` でエスケープする必要があります。
 
-\`- [ ] \(Optional) Open a followup issue\`
+\`- [ ] (Optional) Open a followup issue\`
 
-- [ ] \(Optional) Open a followup issue
+- [ ] (Optional) Open a followup issue
 
 ## 絵文字の使用
 

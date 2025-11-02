@@ -13,13 +13,16 @@
     "start": "gatsby serve",
     "pre-deploy": "bun run ./.bun/pre-deploy.ts",
     "clean": "gatsby clean && rimraf docs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "bun test"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
     "@shiraya-ma/mai-ui": "1.0.0-alpha4",
     "@types/bun": "^1.1.10",
     "autoprefixer": "^10.4.20",
+    "bun": "^1.3.1",
     "framer-motion": "^11.5.4",
     "gatsby": "^5.13.7",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -39,7 +42,12 @@
     "@types/react-dom": "^18.2.19",
     "@types/react-helmet": "^6.1.11",
     "@types/react-syntax-highlighter": "^15.5.13",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^0.12.0",
     "rimraf": "^6.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.26.1"
   }
 }
