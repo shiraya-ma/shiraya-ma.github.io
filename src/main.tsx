@@ -1,13 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+
 import './index.css'
 import App from './App.tsx'
-import { MaiUIProvider } from '@shiraya-ma/mai-ui'
+import { RootLayout } from '@/components/layouts/index.ts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MaiUIProvider>
+    <RootLayout>
       <App />
-    </MaiUIProvider>
+    </RootLayout>
   </StrictMode>
 )
