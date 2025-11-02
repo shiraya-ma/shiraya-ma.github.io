@@ -1,35 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Image } from '@heroui/react';
+import { MaiH1 } from '@shiraya-ma/mai-ui';
+
 import './App.css'
+import { LinkList } from './components/ui';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App () {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <main className='w-full max-w-[80ch] px-4 py-12'>
+      <article className='flex flex-col gap-4'>
+        <MaiH1>Links</MaiH1>
 
-export default App
+        <LinkList>
+          <LinkList.Item
+            data-name='homepage'
+            href='https://www.shiraya.ma'
+            label={(
+              <>
+                <Image
+                  src='/homepage/black.svg'
+                  classNames={{
+                    img: 'dark:hidden h-10',
+                  }}
+                  alt='homepage'
+                  removeWrapper
+                />
+
+                <Image
+                  src='/homepage/white.svg'
+                  classNames={{
+                    img: 'hidden dark:block h-10',
+                  }}
+                  alt='homepage'
+                  removeWrapper
+                  radius='none'
+                />
+              </>
+            )}
+          />
+
+          <LinkList.Item
+            data-name='mai-ui'
+            href='https://docs.shiraya.ma/mai-ui/'
+            label={(
+             <Image
+                src='/mai-ui/logotype.svg'
+                classNames={{
+                  img: 'h-10',
+                }}
+                alt='mai-ui'
+                removeWrapper
+                radius='none'
+              />
+            )}
+
+            details={{
+              'Repository': 'https://github.com/shiraya-ma/mai-ui',
+              'npm': 'https://www.npmjs.com/package/@shiraya-ma/mai-ui',
+            }}
+          />
+        </LinkList>
+      </article>
+    </main>
+  );
+};
+App.displayName = "App";
